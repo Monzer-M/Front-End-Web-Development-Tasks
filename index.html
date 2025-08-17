@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <!-- Logo placeholder -->
+            <div class="logo-container">
+                <div class="logo-placeholder">
+                    <i class="fas fa-cube"></i>
+                    <span class="logo-text">MyApp</span>
+                </div>
+            </div>
+            
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span class="link-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span class="link-text">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-chart-bar"></i>
+                        <span class="link-text">Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <span class="link-text">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="link-text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Main content area -->
+        <main class="main-content">
+            <!-- Toggle button -->
+            <button class="toggle-btn" id="toggleBtn" aria-label="Toggle sidebar">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            
+            <div class="content">
+                <h1>Welcome to the Dashboard</h1>
+                <p>This is the main content area. The sidebar can be toggled using the hamburger menu button.</p>
+                
+                <div class="demo-cards">
+                    <div class="card">
+                        <h3>Card 1</h3>
+                        <p>Sample content for demonstration purposes.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Card 2</h3>
+                        <p>More sample content to show the layout.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Card 3</h3>
+                        <p>Additional content to fill the space.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
